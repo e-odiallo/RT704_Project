@@ -13,15 +13,21 @@
   </head>
   <body>
     <div class="container">
-      <form action="http://localhost:5000/result" method="POST">
-        <div class="form-group">
-
-          <label for="nom">Nom</label> : <input class="form-control" type="text" id="nom" name="nom" />
-          <label for="prenom">Prénom</label> : <input class="form-control" type="text" id="prenom" name="prenom" />
+      <h1>Bienvenue sur la page du commenditaire</h1>
+    </div>
     
+    <div class="container">
+     
+      <form action="/read" method="POST">
+        <div class="form-group">
+          <button type="submit" class="btn btn-primary">Get State</button>
+          <button type="submit" class="btn btn-primary">Get Job</button> 
+          <button type="submit" class="btn btn-primary">Get Result</button>
+          <button type="submit" class="btn btn-primary">Put Result</button>
         </div>
         <div class="form-group">
-          <button type="submit" class="btn btn-primary">Submit</button>
+          <button type="submit" class="btn btn-primary">Read</button>
+          <button type="submit" class="btn btn-primary">Write</button> 
         </div>
       </form>
     </div>

@@ -8,12 +8,18 @@ app = Flask(__name__)
 def login_page ():
     return render_template("index.html")
 
+@app.route("/read", methods=['POST'])
+def read():
+    #Moving forward code
+    forward_message = "Moving Forward..."
+    return render_template('index.html', forward_message=forward_message)
+
 @app.route('/result',methods = ['POST'])
 def result_page ():
     result = request.form 
     name = result["nom"]
     lastname = result["prenom"]
-    return render_template('result.html',nom = name, prenom = lastname)
+    return render_template('result.html')
 
 
 if __name__ == '__main__':

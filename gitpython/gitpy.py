@@ -11,5 +11,4 @@ from git import Repo
 new_repo = Repo.init('test-gitpy')
 my_repo = Repo('test-gitpy')
 
-my_repo.index.add('README.md')
 
